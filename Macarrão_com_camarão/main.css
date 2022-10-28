@@ -1,0 +1,135 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section h2, section h4, section h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+body, input, textarea {
+    font-size: 20px;
+    font-family: 'Great Vibes', cursive;
+}
+
+header {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    padding: 16px 0;
+    background-color: coral;
+    color: #182c61;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: #182c61;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, 
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardapio Img {
+    height: 100px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+
+section img {
+    margin-right: 32px;
+}
+
+.vale img {
+    height: 50px;
+}
+
+.vale li {
+    display: inline;
+}
+
+.social-links Img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 60px;
+}
+
+form button {
+    background-color: rgb(184, 81, 8);
+    color: #182c61;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(185, 117, 68) ;
+}
+
+input:focus, textarea:focus {
+    outline-color: coral;
+}
+
+footer {
+    background-color: coral;
+    color: #182c61;
+    padding: 16px 0;
+}
