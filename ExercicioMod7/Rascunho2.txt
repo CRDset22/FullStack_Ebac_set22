@@ -1,0 +1,59 @@
+As funções comentadas estão no escopo global, para utiliza-las tem que comentar as de escopo local e descomentar as de escopo global
+
+const form = document.getElementById('form-deposito');
+//const eventA = document.getElementById('Campo-A');
+//const eventB = document.getElementById('Campo-B');
+/*
+function validaNumero(b){
+    var A = eventA.value;
+    var B = eventB.value;
+    var b = B - A;
+    return b > 0;
+}
+*/
+-----------------------------------------------------------------
+/* Essa função não funcionou		.
+function validaNumero(b){		.
+    var A = intA.value;		.
+    var B = intB.value;		.
+    b = B - A;			.
+    return b > 0;			.
+}				.
+*/
+-----------------------------------------------------------------
+
+
+
+form.addEventListener('submit', function(e){
+
+e.preventDefault();
+
+var numberA = document.getElementById('Campo-A');
+var numberB = document.getElementById('Campo-B');
+var numberC = numberB.value - numberA.value;
+var numberD = numberC > 0;
+
+
+const mensagemsucesso = `Operação realizada com sucesso: `
+
+//formEvalido = validaNumero();
+formEvalido = numberD;
+
+if(formEvalido){
+    alert(mensagemsucesso);
+
+    //eventA.value = '';
+    //eventB.value = '';
+
+    numberA.value = '';
+    numberB.value = '';
+} else{
+    alert("Operação Negativa");
+    //eventA.value = '';
+    //eventB.value = '';
+
+    numberA.value = '';
+    numberB.value = '';
+}
+
+})
