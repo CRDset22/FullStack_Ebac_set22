@@ -1,0 +1,205 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #964b00;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.carros img {
+    max-width: 100%;
+}
+
+.loja {
+    display: flex;
+    margin-bottom: 56px;
+    
+    
+}
+
+.loja .carro a {
+    
+    font-size: 1.5em;
+}
+
+.loja img {
+    height: 320px;
+    padding-right: 16px;
+    margin-right: 8px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+    border-bottom: 1px solid #964b00;
+}
+
+
+
+.salao {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%) ;
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.salao .carros button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #964b00;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.salao .carros strong{
+    margin: 10px 0;
+    display: block;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .one h2{
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 100px;
+
+    }
+
+    .conteudo {
+        display: block;
+        
+        
+    }
+
+    .container {
+        display: block;
+        width: 90%;
+        
+    }
+
+    .loja {
+        display: block;
+        width: 100%;
+        
+            
+    }
+
+        
+    .loja .carro p {
+        width: 100%;
+        height: auto;
+        font-size: 1.5em;
+        
+    }
+    
+    .loja img {
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .salao {
+        width: 100%;
+        display: block;
+        
+        
+        
+        /*align-items: center;
+        justify-content: center;*/
+        
+        
+        
+    }
+
+    .salao .carros {
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .salao .carros h3{
+        font-size: 1.25em;
+        margin-left: 0px;
+        width: 100%;
+        
+        
+    }
+
+    .salao .carros img {
+        width: 100%;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+/*
+    .loja img{
+        align-items: center;*/
+    
+    .loja {
+        display: block;
+    }
+
+    .loja img {
+        max-width: 100%;
+    }
+
+    .loja .carro p h1{
+        display: block;
+        font-size: 1.5em;
+        
+    }
+
+    .salao {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+}
+
+@media screen and (min-width: 1204px){
+    .botao-menu {
+        display: none;
+    }
+}
+
+
