@@ -1,0 +1,73 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: rgb(204, 0, 0);
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: #fff;
+    color: rgb(204, 0, 0);
+}
+
+#button{
+    background-color: #fff;
+    color: rgb(204, 0, 0);
+}
+
+#cabecalho .nav .nav-link , .navbar-brand,
+.navbar-brand:hover, .nav-produtos .nav-link.active:hover {
+    color: #fff;
+}
+
+
+.navbar-toggler {
+    background-color: #ffeae6;
+    
+}
+
+.section-title {
+    font-family:Pacifico, cursive; 
+}
+
+/*.section-title span {
+    color:rgb(204, 0, 0); 
+} regra retirada para dar espaço para text-colored*/ 
+
+#sobre-o-restaurante,#produtos {
+    background-color: #ffeae6;
+}
+
+.text-colored {
+    color: rgb(204, 0, 0);
+}
+
+.nav-produtos .nav-link.active,
+#fale-conosco button{
+    background-color: rgb(204, 0, 0);
+    color: #fff;
+}
+
+.nav-produtos .nav-link:hover{
+    color: rgb(204, 0, 0);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.cor-de-uva{
+    color: rgb(204, 0, 0);
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
