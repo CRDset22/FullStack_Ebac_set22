@@ -1,0 +1,74 @@
+@use 'config/reset';
+@use 'config/cores';
+@use 'secoes/produtos';
+@use 'config/breakpoints';
+
+
+
+body{
+    background-color: cores.$corBody;
+} 
+
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: cores.$corHeader;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.menu li a {
+    color: cores.$corMenu_and_TextButton;
+    text-decoration: none;
+}
+
+section {
+    padding: 56px 0;
+}
+
+@media screen and (max-width: breakpoints.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: breakpoints.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
