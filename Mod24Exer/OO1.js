@@ -61,12 +61,12 @@ function Cargo(nome, idade, cor, genero, participacaoLucros, nivel, experiencia,
     Funcionario.call(this, nome, idade, cor, genero, participacaoLucros, nivel, experiencia);
 
     // Atributos privados
-    var _cargo = cargo
-    var _setor = setor;
-    var _chefe = chefe;
-    var _aumentoAnual = aumentoAnual;
-    var _salario = salario;
-    var _aumentoAnual = aumentoAnual;
+    let _cargo = cargo
+    let _setor = setor;
+    let _chefe = chefe;
+    let _aumentoAnual = aumentoAnual;
+    let _salario = salario;
+
 
 
     // Getters e setters
